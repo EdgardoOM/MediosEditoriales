@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Upright";
+    color: #333;
+}
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logoInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info{
+    width: 25%;
+    text-align: center;
+}
+
+.info:nth-child(2){
+    width: 50%;
+}
+
+h1, h2{
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 span{
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: -20px;
+    font-size: 18px;
+}
+
+.logoInfo p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    padding: 10px 0;
+    transition: all .4s ease;
+}
+
+nav a:hover{
+    background-color: aquamarine;
+    color: #333;
+    font-weight: 700;
+}
+
+main{
+    padding: 20px 0;
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.n1{
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.n2{
+    grid-area: 1 / 2 / 4 / 3;
+}
+
+.n3{
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.n4{
+    grid-area: 3 / 1 / 5 / 2;
+}
+
+.n5{
+    grid-area: 3 / 3 / 5 / 3;
+}
+
+.n6{
+    grid-area: 5 / 1 / 7 / 2;
+}
+
+.n7{
+    grid-area: 4 / 2 / 7 / 3;
+}
+
+.n8{
+    grid-area: 5 / 3 / 7 / 4;
+}
+
+.n1, .n3, .n5, .n6{
+    height: 350px;
+}
+
+.n1, .n2, .n3, .n5, .n6, .n7{
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.n4{
+    background-image: url(Carrrera14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F1B83;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.n2 .imagen, .n7 .imagen{
+    height: 350px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 21px;
+}
+
+.boton a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    background-color: aquamarine;
+    padding: 15px 0;
+    transition: all .4s ease;
+}
+
+.boton a:hover{
+    background-color: #333;
+    color: aquamarine;
+    font-weight: 700;
+}
+
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 350px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.contenedorFooter{
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    padding: 20px 0;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+
+.izquierda, .centro, .derecha{
+    width: 33%;
+    height: 200px;
+}
+
+.izquierda{
+    text-align: center;
+}
+
+.footerTitulo{
+    font-family: "Montserrat";
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.footerSubtitulo{
+    font-family: "Montserrat";
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.integrantes{
+    color: #fff;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.activo{
+    background-color: aquamarine;
+    color: #333;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.centro a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 38px;
+    display: block;
+    transition: all .4s ease;
+}
+
+.centro a:hover{
+    background-color: aquamarine;
+    color: #333;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.derecha{
+    text-align: center;
+}
+
+.derecha .instituto{
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.derecha .region{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.logoPie{
+    width: 200px;
+    height: 150px;
+    background-image: url(logoInstituto.png);
+    margin: 10px auto;
+
+}
+
+/* Titulos, Subtiulos y noticia */
+
+.tituloNoticia{
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.subtituloNoticia{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.desarrolloNoticia{
+    font-family: 'Montserrat';
+    font-size: 21px;
+    line-height: 30px;
+}
